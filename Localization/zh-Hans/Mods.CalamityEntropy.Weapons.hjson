@@ -1,0 +1,43 @@
+Rogue: {
+	HammerGeneral:
+		'''
+		无需盗贼套装也能进行潜伏攻击
+		少于10点潜伏值时提供10点潜伏值上限
+		'''
+
+	Gods: {
+		DisplayName: 双联神锤
+		Tooltip:
+			'''
+			投掷强大的星系之锤，命中敌人时释放星云射线
+			潜伏攻击时，掷出一个超高速的神明之锤，返程时释放星云射线
+			撞击敌人后分裂成两个子锤，子锤在一定时间后发起挂载，挂载结束时返程至玩家手上后回击
+			'''
+	}
+
+	Final: {
+		Tooltip: ""
+		DisplayName: 终焉
+	}
+
+	Hallowed: {
+		DisplayName: 圣洁
+		Tooltip: ""
+	}
+
+	Lunar: {
+		DisplayName: 皓月
+		Tooltip: ""
+	}
+
+	Paladin: {
+		DisplayName: 圣骑
+		Tooltip: ""
+	}
+}
+
+StatBloats: {
+	Percent: 膨胀倍率：{0}x
+	Direct: 伤害膨胀: {0} -> {1}
+	Title: 跨模组联动：启用灾厄遗产数值膨胀
+}

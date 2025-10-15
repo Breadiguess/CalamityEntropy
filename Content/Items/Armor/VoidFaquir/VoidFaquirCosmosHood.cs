@@ -11,6 +11,10 @@ namespace CalamityEntropy.Content.Items.Armor.VoidFaquir
     [AutoloadEquip(EquipType.Head)]
     public class VoidFaquirCosmosHood : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = false;
+        }
         public override void SetDefaults()
         {
             Item.width = 18;
@@ -46,11 +50,6 @@ namespace CalamityEntropy.Content.Items.Armor.VoidFaquir
             player.GetDamage(DamageClass.Magic) += 0.3f;
             player.GetCritChance(DamageClass.Magic) += 25;
             player.statManaMax2 += 150;
-        }
-
-        public override void ModifyTooltips(List<TooltipLine> tooltips)
-        {
-
         }
 
         public override void AddRecipes()

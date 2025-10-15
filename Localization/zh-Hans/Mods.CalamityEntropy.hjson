@@ -61,22 +61,22 @@ Items: {
 			}
 
 			AzureOfFirmament: {
+				DisplayName: 天穹之澈
 				Tooltip:
 					'''
 					丢出一把苍穹标枪
 					潜伏攻击会同时散射出羽毛
 					标枪击中目标后羽毛会飞向目标
 					'''
-				DisplayName: 天穹之澈
 			}
 
 			ArbitratorII: {
+				DisplayName: 仲裁者II
 				Tooltip:
 					'''
 					丢出一把会爆炸的标枪
 					潜伏攻击会插在目标身上并在一秒后产生更大的爆炸
 					'''
-				DisplayName: 仲裁者II
 			}
 
 			Voidseeker: {
@@ -2820,6 +2820,7 @@ Items: {
 			足够大的锯片会在飞行一段时间后根据击中敌人的数量生成追踪虚空新星并折返
 			右键向前方突进一小段距离
 			如果蓄满的锯片在此时被接住，可以进行一次强化并再次发射出去，持续发射追踪的虚空新星
+			最多只能同时存在4个普通锯片
 			'''
 	}
 
@@ -2911,22 +2912,40 @@ Items: {
 
 	Vast: {
 		DisplayName: 无垠
-		Tooltip:
+		TooltipBase:
 			'''
 			该饰品的强度和效果随进度增加
 			当前效果：
-			必要时自动使用魔力药水
-			拥有魔能增益时，增加4%魔法暴击率
-			#2使用魔力药水后，其恢复量有75%比例立即生效，剩余25%在5秒内逐步恢复，
-			#2期间受到超过80点的伤害会使此恢复中断，使此次受击无敌帧延长并短暂加速回血
-			#2“潮水般的魔力在你的血液中脉动...”
-			#3每消耗 150+基础魔力上限的20% 魔力后，获得一层魔流增益，每层增加4%强化魔力，最多可叠加5层
-			#3每1点强化魔力会为你提供0.05%的伤害减免
-			#4魔力病与魔力烧蚀的影响减半
-			#4增加回复魔力时受击后的回血效果
-			#5暴击会对目标造成灵魂紊乱减益
-			#6每层魔流额外提供1%魔法暴击率和3%魔法暴击伤害加成
 			'''
+		Level0:
+			'''
+			-8%魔力消耗
+			必要时自动使用魔力药水
+			'''
+		Level1:
+			'''
+			魔力药水额外回复10%的魔力
+			拥有魔能增益时，增加4%魔法暴击率
+			'''
+		Level2:
+			'''
+			使用魔力药水后，其恢复量有75%比例立即生效，剩余25%在5秒内逐步恢复，
+			期间受到超过80点的伤害会使此恢复中断，使此次受击无敌帧延长并短暂加速回血
+			“潮水般的魔力在你的血液中脉动...”
+			'''
+		Level3:
+			'''
+			每消耗 150+基础魔力上限的20% 魔力后，获得一层魔流增益，每层增加4%强化魔力，最多可叠加5层
+			每1点强化魔力会为你提供0.05%的伤害减免
+			'''
+		Level4:
+			'''
+			魔力病与魔力烧蚀的影响减半
+			增加回复魔力时受击后的回血效果
+			'''
+		Level5: 暴击会对目标造成灵魂紊乱减益
+		Level6: 每层魔流额外提供1%魔法暴击率和3%魔法暴击伤害加成
+		Tooltip: ""
 	}
 
 	AzafureDetectionEquipment: {
@@ -3143,6 +3162,11 @@ Items: {
 	AncientFragmentsSoul: {
 		DisplayName: 远古残片『|』
 		Tooltip: ""
+	}
+
+	MomosLightPet: {
+		DisplayName: Momo的照明宠物
+		Tooltip: 它的主人至今没有给它取名
 	}
 }
 
@@ -3512,7 +3536,7 @@ Projectiles: {
 	ElementalFractalThrown.DisplayName: 元素分形
 	StarlitFractalHeld.DisplayName: 星熠分形
 	FractalStarBlade.DisplayName: 分形星影
-	// FractalStar.DisplayName: Fractal Star
+	FractalStar.DisplayName: 分形之星
 	AbyssFractalHeld.DisplayName: 深渊分形
 	AbyssalBlade.DisplayName: 深渊剑影
 	AbyssalBullet.DisplayName: 渊水弹
@@ -3643,7 +3667,10 @@ Projectiles: {
 	HowlingCannonHeld.DisplayName: 哀嚎重炮
 	HowlingBullet.DisplayName: 哀嚎魂弹
 	HowlingLaser.DisplayName: 哀嚎死光
-	// FractalStarblight.DisplayName: Fractal Starblight
+	FractalStarblight.DisplayName: 分形星弹
+	HexController.DisplayName: HexController
+	HexVertex.DisplayName: Hex Vertex
+	Molightpet.DisplayName: Mo的照明宠物
 }
 
 LegendTooltip: - 传奇物品 -
@@ -3948,6 +3975,11 @@ Buffs: {
 		DisplayName: 虚空赋能
 		Description: 武器强化
 	}
+
+	MomosLightPetBuff: {
+		DisplayName: 没名字的照明宠物
+		Description: ""
+	}
 }
 
 Uh: 呃啊~
@@ -4238,6 +4270,11 @@ Configs: {
 		BramblecleaveAlwaysUnlockAllSkill: {
 			Label: 禁用苍郁之锋技能锁定
 			Tooltip: 启用后，苍郁之锋所有技能能在游戏初期使用，伤害取决于武器的面板伤害，适合给那些想在游戏初期就体验这些技能的玩家
+		}
+
+		LeastDamageSufferedBasedOnMaxHealth: {
+			Label: 至少受到的伤害
+			Tooltip: 基于你的最大生命值，每次受击至少会扣除一定的生命值，默认为0，即不生效
 		}
 	}
 }
