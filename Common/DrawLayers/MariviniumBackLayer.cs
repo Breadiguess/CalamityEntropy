@@ -24,6 +24,10 @@ namespace CalamityEntropy.Common.DrawLayers
             Vector2 offset = drawInfo.GetFrameOrigin() + new Vector2(1 * player.direction, 1) + new Vector2(drawInfo.drawPlayer.width, drawInfo.drawPlayer.height - 16) + Main.OffsetsPlayerHeadgear[drawInfo.drawPlayer.bodyFrame.Y / drawInfo.drawPlayer.bodyFrame.Height] * drawInfo.drawPlayer.gravDir;
             drawInfo.DrawDataCache.Add(new DrawData(back, offset, null, drawInfo.colorArmorBody, player.fullRotation, (back.Size() / 2f), 1, drawInfo.drawPlayer.direction == 1 ? SpriteEffects.None : SpriteEffects.FlipHorizontally) { shader = drawInfo.drawPlayer.cBody });
 
+            string msg = "";
+            msg += player.Entropy().MariviniumShieldCd.ToString();
+
+            Utils.DrawBorderString(Main.spriteBatch, msg, player.Center - Main.screenPosition, Color.AntiqueWhite, anchory: -1);
         }
 
     }

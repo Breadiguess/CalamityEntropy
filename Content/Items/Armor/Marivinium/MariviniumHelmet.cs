@@ -47,7 +47,8 @@ namespace CalamityEntropy.Content.Items.Armor.Marivinium
             player.Entropy().summonCrit += 5;
             player.GetArmorPenetration(DamageClass.Generic) += 50;
             player.Entropy().MariviniumSet = true;
-            if (!ModContent.GetInstance<Config>().MariviumArmorSetOnlyProvideStealthBarWhenHoldingRogueWeapons || player.HeldItem.DamageType.CountsAsClass(CEUtils.RogueDC))
+            if (!ModContent.GetInstance<Config>().MariviumArmorSetOnlyProvideStealthBarWhenHoldingRogueWeapons
+                || player.HeldItem.DamageType.CountsAsClass(CEUtils.RogueDC))
             {
                 player.Calamity().wearingRogueArmor = true;
                 player.Calamity().rogueStealthMax += 1.35f;

@@ -2957,7 +2957,6 @@ PrefixitemDesc:
 	'''
 MariviniumSet:
 	'''
-	Armor Bonus:
 	+20% Melee Damage Reduce
 	+10 Minion Slot
 	+100% Summon Damage
@@ -2966,13 +2965,13 @@ MariviniumSet:
 	+50 Armor Penetration
 	if your crit chance is over 100%, convert excess crit chance into damage bonus
 	+135 Rogue Stealth
-	When standing, increase life regen
-	Immunity to most debuffs
-	When using true melee weapons, +15% Damage reduce and 25 defense
+	Increased life regeneration while standing still
+	Grants immunity to most debuffs
+	While holding true melee weapons, gain 25 defense and 15% damage reduction
 	When using a whip, enhance summoner attributes
 	Stealth strike has a probability of causing an water explosion
 	Obtain 2 layers of shields, which will take 15 seconds to recover after being shattered
-	After shield shattered, treat 140 health points and double your damage for 5 seconds
+	After a shield is shattered, heal 140 health and deal 100% increased damage for a short time
 	'''
 DeathMode: Death Mode
 CdMantle: Holy Mantle Cooldown

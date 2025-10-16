@@ -29,6 +29,23 @@
 	  <PackageReference Include="System.Text.Json" Version="9.0.3" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Reference Include="AlchemistNPCLite">
+	    <HintPath>..\..\ModReader\AlchemistNPCLite\AlchemistNPCLite.dll</HintPath>
+	  </Reference>
+	  <Reference Include="CalamityMod">
+	    <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
+	  </Reference>
+	  <Reference Include="CalamityOverhaul">
+	    <HintPath>..\..\ModReader\CalamityOverhaul\CalamityOverhaul.dll</HintPath>
+	  </Reference>
+	  <Reference Include="InfernumMode">
+	    <HintPath>..\..\ModReader\InfernumMode\InfernumMode.dll</HintPath>
+	  </Reference>
+	  <Reference Include="InnoVault">
+	    <HintPath>..\..\ModReader\InnoVault\InnoVault.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
 	  <Compile Update="Properties\Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -40,23 +57,6 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
-	</ItemGroup>
-	<ItemGroup>
-	  <Reference Include="AlchemistNPCLite">
-	    <HintPath>..\ModAssemblies\AlchemistNPCLite.dll</HintPath>
-	  </Reference>
-	  <Reference Include="CalamityMod">
-	    <HintPath>..\ModAssemblies\CalamityMod.dll</HintPath>
-	  </Reference>
-	  <Reference Include="CalamityOverhaul">
-	    <HintPath>..\ModAssemblies\CalamityOverhaul.dll</HintPath>
-	  </Reference>
-	  <Reference Include="InfernumMode">
-	    <HintPath>..\ModAssemblies\InfernumMode.dll</HintPath>
-	  </Reference>
-	  <Reference Include="InnoVault">
-	    <HintPath>..\ModAssemblies\InnoVault.dll</HintPath>
-	  </Reference>
 	</ItemGroup>
 	<!-- References -->
 	
