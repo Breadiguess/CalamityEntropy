@@ -483,36 +483,43 @@ namespace CalamityEntropy.Common
                     }
                 }
             }
-            if (item.type == ModContent.ItemType<VoidFaquirBodyArmor>() || item.type == ModContent.ItemType<VoidFaquirCuises>() || item.type == ModContent.ItemType<VoidFaquirCosmosHood>() || item.type == ModContent.ItemType<VoidFaquirDevourerHelm>() || item.type == ModContent.ItemType<VoidFaquirEvokerHelm>() || item.type == ModContent.ItemType<VoidFaquirLurkerMask>() || item.type == ModContent.ItemType<VoidFaquirShadowHelm>())
+            //:empty:
+            if ((item.type == ModContent.ItemType<VoidFaquirBodyArmor>() 
+                || item.type == ModContent.ItemType<VoidFaquirCuises>() 
+                || item.type == ModContent.ItemType<VoidFaquirCosmosHood>() 
+                || item.type == ModContent.ItemType<VoidFaquirDevourerHelm>() 
+                || item.type == ModContent.ItemType<VoidFaquirEvokerHelm>() 
+                || item.type == ModContent.ItemType<VoidFaquirLurkerMask>() 
+                || item.type == ModContent.ItemType<VoidFaquirShadowHelm>()) && item.wornArmor)
             {
                 if (Main.LocalPlayer.Entropy().VFSet)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.vfb").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.vfb").Value);
                     tooltips.Add(t);
                 }
                 if (Main.LocalPlayer.Entropy().VFHelmMagic)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.helmvfc").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.helmvfc").Value);
                     tooltips.Add(t);
                 }
                 if (Main.LocalPlayer.Entropy().VFHelmMelee)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.helmvfd").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "SetBonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.helmvfd").Value);
                     tooltips.Add(t);
                 }
                 if (Main.LocalPlayer.Entropy().VFHelmRanged)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.helmvfs").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.helmvfs").Value);
                     tooltips.Add(t);
                 }
                 if (Main.LocalPlayer.Entropy().VFHelmRogue)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.helmvfl").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.helmvfl").Value);
                     tooltips.Add(t);
                 }
                 if (Main.LocalPlayer.Entropy().VFHelmSummoner)
                 {
-                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.helmvfe").Value);
+                    TooltipLine t = new TooltipLine(CalamityEntropy.Instance, "Armor Bonus", Language.GetOrRegister("Mods.CalamityEntropy.VoidFaquirSet.helmvfe").Value);
                     tooltips.Add(t);
                 }
             }

@@ -4054,39 +4054,48 @@ Configs: {
 	}
 }
 
-vfb:
-	'''
-	Armor Bonus:
-	+20 Armor Penetration
-	Hitting the target will increase void energy
-	Provides movement and flight speed bonuses based on the amount of void energy
-	Press the armor bonus key to activate Void energy Summon a Void Wraith to assist in battle and fly indefinitely for 10 seconds
-	Void Wrairh damage type depends on the weapon in hand
-	'''
-helmvfc:
-	'''
-	-25% Mana Cost
-	Magic Projectiles hits enemies will reduce your Mana Sickness by 0.5s
-	'''
-helmvfd:
-	'''
-	+24% Attack Speed
-	+10% Damage Reduce
-	Accumulates more void energy when hitting targets.
-	'''
-helmvfs: Projectile damage increases with time
-helmvfl:
-	'''
-	+15% movement speed
-	+135 Max Stealth
-	Stealth strikes will accumulate more void energy
-	'''
-helmvfe:
-	'''
-	+7 Max Minions
-	+80% Summon Damage
-	Summon a Void Symbiont fight for you
-	'''
+//wtf
+VoidFaquirSet: {
+	vfb:
+		'''
+		Set Bonus:
+		+20 Armor Penetration
+		Hitting the target will increase void energy
+		Provides movement and flight speed bonuses based on the amount of void energy
+		Activating the set bonus will summon a Void Wraith to assist in battle, as well as granting you infinite flight for 10 seconds
+		Press the armor bonus key to activate Void energy Summon a Void Wraith to assist in battle and fly indefinitely for 10 seconds
+		Void Wraith damage type depends on the weapon in hand
+		'''
+	helmvfc:
+		'''
+		Set Bonus:
+		-25% Mana Cost
+		Magic Projectiles hits enemies will reduce your Mana Sickness by 0.5s
+		'''
+	helmvfd:
+		'''
+		Set Bonus:
+		+24% Attack Speed
+		+10% Damage Reduce
+		Accumulates more void energy when hitting targets.
+		'''
+	helmvfs: Projectile damage increases with time
+	helmvfl:
+		'''
+		Set Bonus:
+		+15% movement speed
+		+135 Max Stealth
+		Stealth strikes will accumulate more void energy
+		'''
+	helmvfe:
+		'''
+		Set Bonus:
+		+7 Max Minions
+		+80% Summon Damage
+		Summon a Void Symbiont fight for you
+		'''
+}
+
 Reforge: Reforge
 ArmorPrefixHardName: Hard
 ArmorPrefixHardDescription: +10% defense
